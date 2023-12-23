@@ -1,0 +1,77 @@
+.input-container {
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ========================================================================================= */
+/* input styling */
+.input-wrap {
+    width: inherit;
+    display: flex;
+    border-radius: 8px;
+    background-color: #181818;
+}
+.input {
+    width: 100%;
+    background-color: transparent;
+    padding-inline: 16px;
+    outline: none;
+    border: none;
+}
+
+.input::placeholder {
+}
+
+.input:disabled {
+}
+.input-error {
+    outline: 1px solid red;
+}
+/* ========================================================================================= */
+
+/* ========================================================================================= */
+/* sizing */
+.lg {
+    height: 52px;
+}
+
+.md {
+    height: 44px;
+}
+
+.sm {
+    height: 32px;
+    font-size: 14px;
+}
+
+.md,
+.lg {
+    font-size: 16px;
+}
+/* ========================================================================================= */
+
+/* ========================================================================================= */
+/* label & error styling */
+.label,
+.error {
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+}
+/* ========================================================================================= */
+
+/* ========================================================================================= */
+/* button */
+.input-button {
+    height: 44px;
+    width: 44px;
+    background-color: transparent;
+    border: none;
+}
+
+/* ========================================================================================= */
