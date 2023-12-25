@@ -1,13 +1,28 @@
+'use client';
+
 import Link from 'next/link';
 import { Input, Button } from '@/components/components';
-
 export default function Page() {
     return (
-        <form action="" style={{ width: '100%' }}>
+        <form action="">
             <h5 style={{ textAlign: 'center', marginBottom: '48px' }}>
-                Log In
+                Sign Up
             </h5>
             <div style={{ marginBottom: '48px' }}>
+                <Input
+                    style={{ marginBottom: '16px' }}
+                    size="md"
+                    placeholder="Qairat"
+                    label="Firstname"
+                    name="firstname"
+                />
+                <Input
+                    style={{ marginBottom: '16px' }}
+                    size="md"
+                    placeholder="Nurtas"
+                    label="Lastname"
+                    name="lastname"
+                />
                 <Input
                     style={{ marginBottom: '16px' }}
                     size="md"
@@ -24,6 +39,11 @@ export default function Page() {
                 />
             </div>
             <div>
+                <p style={{ marginBottom: '16px', color: 'var(--tertiary)' }}>
+                    By continuing, I accept the terms of the User Agreement and
+                    consent to the processing if my personal in accordance with
+                    the Privacy Policy
+                </p>
                 <Button
                     style={{ marginBottom: '48px' }}
                     shape="rect"
@@ -34,15 +54,9 @@ export default function Page() {
                 </Button>
                 <div style={{ textAlign: 'center' }}>
                     <p>
-                        Forgot the password?{' '}
+                        I have an account.{' '}
                         <Link className="link" href={'#'}>
-                            Reset
-                        </Link>
-                    </p>
-                    <p>
-                        New to the Aritmetica?{' '}
-                        <Link className="link" href={'#'}>
-                            Create account
+                            Log In
                         </Link>
                     </p>
                 </div>

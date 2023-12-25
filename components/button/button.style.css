@@ -1,32 +1,133 @@
 /* ========================================================================================= */
-/* sizing */
-.lg {
-    height: 52px;
-}
 
-.md {
-    height: 44px;
-}
+/* Emphasis */
+/* Buttons use color and contrast to create three levels of emphasis and hierarchy. 
+The buttons with the strongest emphasis are primary, followed by secondary, then tertiary.  */
 
-.sm {
-    height: 32px;
+/* PRIMARY */
+.primary {
+    background-color: var(--primary);
+    color: var(--foreground);
+}
+.primary svg path {
+    stroke: var(--foreground);
+}
+.primary svg path[fill] {
+    fill: var(--foreground);
+}
+.primary.destructive {
+    background-color: var(--danger);
+}
+/* SECONDARY */
+.secondary {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+.secondary svg path {
+    stroke: var(--text);
+}
+.secondary svg path[fill] {
+    stroke: var(--text);
+}
+.secondary.destructive {
+    color: var(--danger);
+}
+.secondary.destructive svg path {
+    stroke: var(--danger);
+}
+.secondary.destructive svg path[fill] {
+    fill: var(--danger);
+}
+/* TERTIARY */
+.tertiary {
+    background-color: transparent !important;
+    color: var(--text);
+}
+.tertiary svg path {
+    stroke: var(--text);
+}
+.tertiary svg path[fill] {
+    fill: var(--text);
+}
+/* ========================================================================================= */
+/* Sizing */
+/* small */
+button.sm {
+    padding: 12px 16px;
     font-size: 14px;
-    gap: 4px;
 }
-
-.md,
-.lg {
+button.sm svg {
+    width: 16px;
+    height: 16px;
+}
+/* medium */
+button.md {
+    padding: 14px 16px;
     font-size: 16px;
-    gap: 8px;
+}
+button.md svg {
+    width: 20px;
+    height: 20px;
+}
+/* large */
+button.lg {
+    padding: 16px 20px;
+    font-size: 18px;
+}
+button.lg svg {
+    width: 24px;
+    height: 24px;
 }
 /* ========================================================================================= */
-
-/* ========================================================================================= */
-/* main */
-.button {
+/* Shapes */
+.rect {
     width: 100%;
+}
+.square,
+.circle {
+    width: 48px;
+    height: 48px;
+}
+.circle {
+    border-radius: 24px;
+}
+.pill {
+    border-radius: 50px;
+}
+/* ========================================================================================= */
+/* default */
+button {
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+}
+button:disabled {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+}
+
+button:disabled svg path {
+    stroke: var(--tertiary);
+}
+
+button:disabled svg path[fill] {
+    fill: var(--tertiary);
+}
+button.rotate svg {
+    animation: Loading 1s infinite;
 }
 /* ========================================================================================= */
+/* loading animation */
+@keyframes Loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

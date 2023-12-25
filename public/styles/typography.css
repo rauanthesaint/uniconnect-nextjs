@@ -1,0 +1,40 @@
+a,
+p,
+span,
+button {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 89.76px;
+}
+h2 {
+    font-size: 67.34px;
+}
+h3 {
+    font-size: 50.52px;
+}
+h4 {
+    font-size: 37.9px;
+}
+h5 {
+    font-size: 28.43px;
+}
+h6 {
+    font-size: 21.33px;
+}
+.small {
+    font-size: 14px;
+}

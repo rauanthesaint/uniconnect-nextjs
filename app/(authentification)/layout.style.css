@@ -1,44 +1,6 @@
-.layout {
+section {
     height: 100vh;
-    width: 100%;
-}
-
-.form-container {
-    height: 100%;
-    padding: 16px;
-}
-
-.banner-container {
-    display: none;
-}
-
-@media screen and (min-width: 426px) {
-    .form-container {
-        background: red;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .layout {
-        display: grid;
-        grid-template-columns: 400px auto;
-    }
-
-    .banner-container {
-        display: block;
-    }
-
-    .form-container {
-        display: grid;
-        place-items: center;
-        padding: 48px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .layout {
-        display: grid;
-        grid-template-columns: 480px auto;
-    }
+    padding-inline: 24px;
+    display: grid;
+    place-items: center;
 }
